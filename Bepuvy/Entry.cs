@@ -141,7 +141,7 @@ public class PyramidSimulation
     public PyramidSimulation()
     {
         pool = new BufferPool();
-        dispatcher = new ThreadDispatcher(2);
+        dispatcher = new ThreadDispatcher(6);
 
         var springsettings = new SpringSettings(30, 1);
         var narrowcallbacks = new InteropNarrowPhaseCallbacks(springsettings);
